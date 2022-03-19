@@ -24,4 +24,4 @@ jobs:
         service: 'hello-cloud-run'
 
     - name: 'Use output'
-      run: 'curl "${{ steps.deploy.outputs.url }}"'
+      run: echo ${{ steps.deploy.outputs.url }}
